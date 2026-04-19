@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="JMS Bakery and Cafe — fresh pastries, coffee, and meals. Visit us or order for pickup."
+    />
+    <title>JMS Bakery and Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" data-i18n="brand">JMS Bakery &amp; Cafe</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#menu" data-i18n="nav_menu">Menu</a>
+          <a href="#offers" data-i18n="nav_offers">Offers</a>
+          <a href="#location" data-i18n="nav_location">Location</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">
+              English
+            </button>
+            <button type="button" class="lang-btn" data-lang="ne" aria-pressed="false">नेपाली</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="eyebrow" data-i18n="hero_eyebrow">Fresh daily · Warm welcome</p>
+          <h1 data-i18n="hero_title">Baked with care, served with heart.</h1>
+          <p class="hero-lead" data-i18n="hero_lead">
+            Artisan breads, pastries, and specialty coffee in a cozy neighborhood cafe. Perfect for
+            breakfast, lunch, or an afternoon treat.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#menu" data-i18n="hero_cta_menu">View menu</a>
+            <a class="btn btn-ghost" href="#location" data-i18n="hero_cta_visit">Visit us</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section menu-section">
+        <div class="container">
+          <header class="section-head">
+            <h2 data-i18n="menu_title">Our menu</h2>
+            <p class="section-sub" data-i18n="menu_sub">
+              Prices in Nepalese Rupees (NPR), in line with typical local bakery and fast-food menus
+              in Nepal. Seasonal items may vary — ask about allergens.
+            </p>
+          </header>
+          <div class="menu-grid" id="menu-root"></div>
+        </div>
+      </section>
+
+      <section id="offers" class="section offers-section">
+        <div class="container">
+          <header class="section-head">
+            <h2 data-i18n="offers_title">Current offers</h2>
+            <p class="section-sub" data-i18n="offers_sub">Limited-time deals for dine-in and takeaway.</p>
+          </header>
+          <ul class="offers-list" id="offers-root"></ul>
+        </div>
+      </section>
+
+      <section id="location" class="section location-section">
+        <div class="container">
+          <header class="section-head">
+            <h2 data-i18n="loc_title">Find us</h2>
+            <p class="section-sub" data-i18n="loc_sub">We are easy to reach by car or public transport.</p>
+          </header>
+          <div class="location-grid">
+            <div class="location-card">
+              <h3 data-i18n="loc_hours_title">Opening hours</h3>
+              <ul class="hours-list" id="hours-root"></ul>
+              <h3 class="mt-lg" data-i18n="loc_contact_title">Contact</h3>
+              <p class="contact-block">
+                <span data-i18n="loc_phone_label">Phone</span>:
+                <a href="tel:+9779812723422">+977 981-2723422</a><br />
+                <span data-i18n="loc_email_label">Email</span>:
+                <a href="mailto:surajpant@gmail.com">surajpant@gmail.com</a>
+              </p>
+            </div>
+            <div class="location-card map-card">
+              <h3 data-i18n="loc_address_title">Address</h3>
+              <address class="address" data-i18n="loc_address">
+                W3PR+94Q, Chandani 10400, Nepal
+              </address>
+              <div class="map-embed" aria-label="Map">
+                <iframe
+                  title="JMS Bakery and Cafe location"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen=""
+                  src="https://www.google.com/maps?q=28.9359596%2C80.0936331&amp;z=17&amp;hl=en&amp;output=embed"
+                ></iframe>
+              </div>
+              <p class="map-actions">
+                <a
+                  class="maps-link"
+                  href="https://www.google.com/maps/place/JMS+Bakery+and+Cafe/@28.9359596,80.0936331,17z/data=!3m1!4b1!4m6!3m5!1s0x39a05314e2515ee1:0x59e2b0ef0905d531!8m2!3d28.9359596!4d80.0936331!16s%2Fg%2F11v34943_w"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="loc_open_maps"
+                  >Open in Google Maps</a
+                >
+              </p>
+              <p class="map-note" data-i18n="loc_map_note">Same location as our Google Maps listing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand" data-i18n="footer_tagline">JMS Bakery &amp; Cafe — See you soon.</p>
+        <p class="footer-copy">&copy; <span id="year"></span> JMS Bakery and Cafe.</p>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
